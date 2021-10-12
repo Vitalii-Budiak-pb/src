@@ -20,15 +20,16 @@ public class Calculator {
 
         switch (sign){
             case "+":
-                System.out.println("Результат:" + (operand1 + operand2));
+                System.out.println("Результат: " + (operand1 + operand2));
                 break;
 
             case "-":
-                System.out.println("Результат:" + (operand1 - operand2));
+                System.out.println("Результат: " + (operand1 - operand2));
                 break;
 
             case "*":
-                System.out.println("Результат:" + (operand1 * operand2));
+                System.out.println("Результат: " + (operand1 * operand2));
+                break;
 
             case "/":
                 if(operand2 != 0 ){

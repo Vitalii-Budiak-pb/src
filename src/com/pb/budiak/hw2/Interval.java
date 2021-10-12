@@ -10,11 +10,16 @@ public class Interval {
         System.out.print("Введите целое число в диапазоне от [0 - 100]: ");
         x = in.nextInt();
 
+        if (x < 0){
+            System.out.println("Ошибка!\nВаше число меньше \"0\"");
+        }
+
+        if (x > 100){
+            System.out.println("Ваше число больше допустимого диапазона.\nПопробуйте заново!");
+        }
+
         if (x >= 0 && x <= 14){
             System.out.println("Ваше число попадает в диапазон [0 - 14]");
-        }
-        else if (x < 0){
-            System.out.println("Ошибка!\nВаше число меньше \"0\"");
         }
 
         if (x >= 15 && x <= 35){
@@ -27,8 +32,6 @@ public class Interval {
 
         if (x >= 51 && x <= 100){
             System.out.println("Ваше число попадает в диапазон [51 - 100]");
-        } else if (x > 100){
-            System.out.println("Ваше число больше допустимого диапазона.\nПопробуйте заново!");
         }
     }
 }
