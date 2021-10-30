@@ -10,10 +10,10 @@ public class CapitalLetter {
 
     public static void main (String[] args){
         Scanner in = new Scanner(System.in);
-        String line_in;
+        String lineIn;
         System.out.print("Введите любую стоку: ");
-        line_in = in.nextLine();
-        String toUpperCase = toUpperCase(line_in);
+        lineIn = in.nextLine();
+        String toUpperCase = toUpperCase(lineIn);
         System.out.println("Измененная строка: " + toUpperCase);
         //System.out.println(my_text);
 
@@ -21,21 +21,20 @@ public class CapitalLetter {
 
 
 
-    static String toUpperCase (String line_in){
-        String line_out = "";
-        //String line_in = my_text;//"asdas  as aseq w      e sda aswe azs das daweq12e we";
-        String[] text_split2 = line_in.split(" ");
-        for (int i = 0; i < text_split2.length; i++) {
-            if (text_split2[i].length() >= 1){
-                String word = text_split2[i];
+    static String toUpperCase (String lineIn){
+        String lineOut = "";
+        String[] textSplit2 = lineIn.split(" ");
+        for (int i = 0; i < textSplit2.length; i++) {
+            if (textSplit2[i].length() >= 1){
+                String word = textSplit2[i];
                 word = word.substring(0, 1).toUpperCase() + word.substring(1, word.length());
-                line_out = line_out + word + " ";
+                lineOut = lineOut + word + " ";
             }
             else {
-                line_out = line_out + " ";
+                lineOut = lineOut + " ";
             }
         }
-        return line_out;
+        return lineOut;
 
     }
 }
