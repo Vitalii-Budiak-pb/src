@@ -13,7 +13,7 @@ public class VetClinic {
         animals[2] = horse;
 
 
-        Class vetClass = Class.forName("com.pb.leonchenko.hw6.Veterinarian");
+        Class vetClass = Class.forName("com.pb.budiak.hw6.Veterinarian");
         Constructor constructor = vetClass.getConstructor();
         Veterinarian veterinarian = (Veterinarian) constructor.newInstance();
 
