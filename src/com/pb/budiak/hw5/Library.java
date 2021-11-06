@@ -16,9 +16,7 @@ public class Library {
                 new Reader("Сидоров В. В.", 2, "physics", "1991-04-13", "9379993"),
                 new Reader("Иванов В. В.", 3, "it", "1993-01-20", "9379994")
         );
-
-
-
+        
 
         //takeBook
         readers.get(0).takeBook(books.size());
