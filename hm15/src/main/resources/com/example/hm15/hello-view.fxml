@@ -14,8 +14,8 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label text="Пожалуйста заполните строку:" />
+    <Label text="Пожалуйста заполните поле:" />
     <TextField fx:id="clientMessage" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-    <Button onAction="#onSendButtonClick" text="Отправить на сервер!" />
+    <Button onAction="#onSendButtonClick" text="Отправить!" />
     <Label fx:id="response" />
 </VBox>
